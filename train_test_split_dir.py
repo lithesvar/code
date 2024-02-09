@@ -2,6 +2,8 @@ import os
 from sklearn.model_selection import train_test_split
 from shutil import copyfile
 
+"""This code used to split the tarin and test folder for the image classfication based data set"""
+
 def split_dataset(input_dir, output_dir, test_size=0.2, random_state=42):
     # Create output directories if they don't exist
     train_dir = os.path.join(output_dir, 'train')
